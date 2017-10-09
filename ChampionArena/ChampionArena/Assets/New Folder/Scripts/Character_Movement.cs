@@ -149,6 +149,8 @@ public class Character_Movement : MonoBehaviour {
             if (FacingRight == false)
             {
                 GetComponent<Rigidbody2D>().AddForce(Vector2.right * skill2DashPower);
+		//Vector2 diagonalForce = new Vector2((Vector2.right * skill2DashPower).x, (Vector2.up * skill2DashPower).y);
+                //GetComponent<Rigidbody2D>().AddForce(diagonalForce);
             }
             if (FacingRight == true)
             {
